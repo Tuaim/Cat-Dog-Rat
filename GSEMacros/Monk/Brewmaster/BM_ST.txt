@@ -1,0 +1,27 @@
+Sequences['BM_ST'] = {
+  SpecID = 268,
+  Author = "Jabberie@Draka",
+  Talents = "2113112",
+  Default=1,
+  MacroVersions = {
+    [1] = {
+      StepFunction = "Sequential",
+      KeyPress = {
+        "/stopmacro [channeling]"
+      },
+        "/cast Tiger Palm",
+        "/cast Blackout Strike",
+        "/cast Keg Smash",
+        "/cast [combat] Rushing Jade Wind",
+        "/cast [combat] Ironskin Brew",
+        "/cast [combat] Breath of Fire",
+        "/cast Blackout Strike",
+        "/castsequence Keg Smash, Rushing Jade Wind, Breath of Fire, Ironskin Brew, Purifying Brew",
+        "/cast [@player, combat] Exploding Keg",
+        "/cast Tiger Palm",
+      KeyRelease={
+        "/cast [combat] Blood Fury",
+      },
+    },
+  },
+}
