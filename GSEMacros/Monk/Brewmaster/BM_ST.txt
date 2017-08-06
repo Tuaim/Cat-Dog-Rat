@@ -9,18 +9,13 @@ Sequences['BM_ST'] = {
       KeyPress = {
         "/stopmacro [channeling]"
       },
-        "/cast Tiger Palm",
-        "/cast Blackout Strike",
-        "/cast Keg Smash",
-        "/cast [combat] Rushing Jade Wind",
-        "/cast [combat] Ironskin Brew",
-        "/cast [combat] Breath of Fire",
-        "/cast Blackout Strike",
-        "/castsequence Keg Smash, Rushing Jade Wind, Breath of Fire, Ironskin Brew, Purifying Brew",
-        "/cast [@player, combat] Exploding Keg",
-        "/cast Tiger Palm",
+        "/castsequence Keg Smash, Tiger Palm, Blackout Strike, Tiger Palm",      
+        "/castsequence [combat] reset=combat Rushing Jade Wind, Breath of Fire, Tiger Palm, Keg Smash",
+        "/castsequence [combat] reset=combat Ironskin Brew, Tiger Palm, Blackout Strike",
+        "/cast [@player, combat] Exploding Keg",        
       KeyRelease={
         "/cast [combat] Blood Fury",
+        "/cast [combat] Berserking",
       },
     },
   },
